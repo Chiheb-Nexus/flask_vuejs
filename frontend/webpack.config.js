@@ -21,13 +21,22 @@ module.exports = {
       // this will apply to both plain `.css` files
       // AND `<style>` blocks in `.vue` files
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           'vue-style-loader',
-          'css-loader'
+          'css-loader',
+          'sass-loader'
         ]
       },
-    {
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.(png|svg|jpg|gif)$/,
         use: [{
             loader: 'file-loader',
@@ -35,7 +44,7 @@ module.exports = {
                 outputPath: 'static/'
             }
         }]
-    },
+      },
     ]
   },
   plugins: [
