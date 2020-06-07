@@ -19,7 +19,7 @@ application.config.from_object(CURRENT_CONFIG)
 blueprint = Blueprint(
     'static2',
     __name__,
-    static_url_path=os.path.join(BASE_DIR, 'static', 'favicon'),
-    static_folder=os.path.join('frontend', 'public')
+    static_url_path=os.path.join(BASE_DIR, 'frontend', 'static', 'favicon'),
+    static_folder=os.path.join(BASE_DIR, 'frontend', 'public')
 )
 application.register_blueprint(blueprint)
