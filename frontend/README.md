@@ -5,6 +5,11 @@
 npm install
 ```
 
+### Run & Watch and hot-reloads for development
+```
+npm run watch
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
