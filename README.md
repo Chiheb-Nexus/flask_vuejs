@@ -1,1 +1,1 @@
-Flask & Webpack & VueJS
+Flask & Webpack & VueJS & Bootstrap & AgGrid
