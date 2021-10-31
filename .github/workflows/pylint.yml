@@ -20,4 +20,4 @@ jobs:
         pip install -r backend/requirements.txt
     - name: Analysing the code with pylint
       run: |
-        cd backend;flake8 backend/
+        cd backend;flake8 .
